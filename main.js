@@ -1,51 +1,57 @@
-let menu = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+const menuToggle = document.querySelector("#menu-toggle");
+const mainNav = document.querySelector("#main-nav");
 
-menu.onclick = () => {
-    navbar.classList.toggle('active');
-}
+// Mobile menu
+if (menuToggle && mainNav) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = mainNav.classList.toggle("active");
 
-window.onscroll = () => {
-    navbar.classList.remove('active');
-}
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute(
+      "aria-label",
+      isOpen ? "Menü schließen" : "Menü öffnen",
+    );
+  });
 
-const time = () => {
+  // Close menu after selecting a navigation link
+  mainNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mainNav.classList.remove("active");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Menü öffnen");
+    });
+  });
 
-    const activerow = document.querySelector('#activerow');
-
-    const monday = document.querySelector('.monday');
-    const tuesday = document.querySelector('.tuesday');
-    const wednesday = document.querySelector('.wednesday');
-    const thursday = document.querySelector('.thursday');
-    const friday = document.querySelector('.friday');
-    const saturday = document.querySelector('.saturday');
-    const sunday = document.querySelector('.sunday');
-
-
-    switch (new Date().getDay()) {
-
-        case 1:
-            monday.setAttribute("id", "activerow");
-            break;
-        case 2:
-            tuesday.setAttribute("id", "activerow");
-            break;
-        case 3:
-            wednesday.setAttribute("id", "activerow");
-            break;
-        case 4:
-            thursday.setAttribute("id", "activerow");
-            break;
-        case 5:
-            friday.setAttribute("id", "activerow");
-            break;
-        case 6:
-            saturday.setAttribute("id", "activerow");
-            break;
-        case 0:
-            sunday.setAttribute("id", "activerow");
-            break;
+  // Close menu when resizing back to desktop
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 780) {
+      mainNav.classList.remove("active");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Menü öffnen");
     }
-
+  });
 }
-time();
+
+// Highlight current opening day
+const days = [
+  ".sunday",
+  ".monday",
+  ".tuesday",
+  ".wednesday",
+  ".thursday",
+  ".friday",
+  ".saturday",
+];
+
+const currentDay = document.querySelector(days[new Date().getDay()]);
+
+if (currentDay) {
+  currentDay.id = "activerow";
+}
+
+// Automatic copyright year
+const currentYear = document.querySelector("#current-year");
+
+if (currentYear) {
+  currentYear.textContent = new Date().getFullYear();
+}

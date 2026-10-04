@@ -1,200 +1,434 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Automobile Picobello</title>
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>Automobile Picobello | Fahrzeughandel & Finanzierung</title>
 
-  <!--Link To Css-->
-  <link rel="stylesheet" href="style.css" />
-  <!--Box Icons-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
-  <script src="https://kit.fontawesome.com/3d90f69d6d.js" crossorigin="anonymous"></script>
-  <link rel="apple-touch-icon" href="touch-icon-iphone.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png" />
-</head>
+    <meta
+      name="description"
+      content="Automobile Picobello – Ihr zuverlässiger Partner für Fahrzeugverkauf, Fahrzeugankauf, Inzahlungnahme und Finanzierung."
+    />
 
-<body>
-  <!--Navbar-->
-  <header>
-    <a href="#" class="logo">Automobile<span>Picobello</span></a>
-    <div class="bx bx-menu" id="menu-icon"></div>
+    <meta name="robots" content="index, follow" />
 
-    <ul class="navbar">
-      <li><a href="#home">Startseite</a></li>
-      <li><a href="#about">Über uns</a></li>
-      <li><a href="#services-section">Service</a></li>
-      <li><a href="#contact">Kontakt</a></li>
-    </ul>
-  </header>
-  <!--Home-->
-  <section class="home" id="home">
-    <div class="home-text">
-      <h1>
-        <span>Fahrzeuge </span> für jede Lebenslage. <br />
-        Qualität, <span>der Sie vertrauen können!</span>
-      </h1>
-      <p>Wir machen Ihre Fahrt einfacher!</p>
-    </div>
-  </section>
-  <!--shop-->
+    <link rel="canonical" href="https://automobile-picobello.de/" />
 
-  <!--New Arrival-->
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Automobile Picobello | Fahrzeughandel & Finanzierung"
+    />
 
-  <!--About-->
-  <section class="about" id="about">
-    <div class="about-img">
-      <img src="img/about.jpg" alt="about" />
-    </div>
-    <div class="about-text">
-      <span>Über uns</span>
-      <h2>
-        Warum PiccoBello? <br />
-        Weil Qualität zählt
-      </h2>
-      <p>
-        PiccoBello steht für Fahrzeuge in erstklassigem Zustand – und genau
-        das ist unser Anspruch. Unser Name ist Programm. Dank unserer
-        jahrelangen Erfahrung im Automobilbereich bieten wir Ihnen
-        erstklassige Fahrzeuge an.
-      </p>
-      <p>
-        Bei uns kommen nur unfallfreie, scheckheftgepflegte Fahrzeuge mit
-        nachvollziehbarem Kilometerstand in den Verkauf. Ihre Zufriedenheit
-        liegt uns am Herzen, daher sind wir auch nach dem Kauf für Sie da. Wir
-        freuen uns auf Ihren Besuch!
-      </p>
-      <a href="#About Us" class="btn">Erfahren Sie mehr</a>
-    </div>
-  </section>
-  <!--Brands-->
-  <section>
-    <div class="services-section" id="services-section">
-      <div class="inner-width">
-        <h1 class="section-title">Unsere Dienstleistungen</h1>
-        <div class="border"></div>
-        <div class="services-container">
-          <div class="service-box">
-            <div class="service-icon"></div>
-            <div class="service-title">Verkauf</div>
-            <div class="service-desc">
-              Wir bieten eine breite Auswahl an hochwertigen Gebrauchtwagen, die allen Ihren Anforderungen entsprechen. Unser Sortiment umfasst sorgfältig geprüfte Fahrzeuge für jeden Bedarf.
+    <meta
+      property="og:description"
+      content="Fahrzeugverkauf, Fahrzeugankauf, Inzahlungnahme und individuelle Finanzierung bei Automobile Picobello."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://automobile-picobello.de/" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:site_name" content="Automobile Picobello" />
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#111312" />
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AutoDealer",
+        "name": "Automobile Picobello",
+        "url": "https://automobile-picobello.de/",
+        "telephone": "+49 176 63196636",
+        "email": "info@automobile-Picobello.de",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Wormser Landstraße 85C",
+          "postalCode": "67346",
+          "addressLocality": "Speyer",
+          "addressCountry": "DE"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "14:00"
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a
+          href="#home"
+          class="logo"
+          aria-label="Automobile Picobello Startseite"
+        >
+          Automobile<span>Picobello</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          type="button"
+          aria-label="Menü öffnen"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+          <a href="#home">Startseite</a>
+          <a href="#about">Über uns</a>
+          <a href="#services">Service</a>
+          <a href="#opening-hours">Öffnungszeiten</a>
+          <a href="#contact">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="home">
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          aria-hidden="true"
+        >
+          <source src="video/picobello-hero.mp4" type="video/mp4" />
+        </video>
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+          <p class="eyebrow">Automobile Picobello</p>
+
+          <h1>
+            Ihr nächstes Fahrzeug.<br />
+            <span>Fair. Persönlich. Zuverlässig.</span>
+          </h1>
+
+          <p class="hero-description">
+            Hochwertige Gebrauchtwagen, faire Fahrzeugbewertung und individuelle
+            Finanzierung – alles aus einer Hand.
+          </p>
+
+          <div class="hero-actions">
+            <a
+              href="https://home.mobile.de/AUTOMOBILEPICOBELLO"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              Fahrzeuge ansehen
+            </a>
+
+            <a href="#contact" class="btn btn-secondary"> Kontakt aufnehmen </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about section" id="about">
+        <div class="container about-grid">
+          <div class="about-image">
+            <img
+              src="img/about.jpg"
+              alt="Automobile Picobello Fahrzeughandel"
+            />
+          </div>
+
+          <div class="about-content">
+            <p class="eyebrow">Über uns</p>
+
+            <h2>
+              Warum Picobello?<br />
+              Weil Qualität zählt.
+            </h2>
+
+            <p>
+              Picobello steht für Fahrzeuge in erstklassigem Zustand – und genau
+              das ist unser Anspruch. Dank unserer langjährigen Erfahrung im
+              Automobilbereich bieten wir Ihnen sorgfältig ausgewählte Fahrzeuge
+              und eine persönliche Beratung.
+            </p>
+
+            <p>
+              Bei uns kommen nur unfallfreie, scheckheftgepflegte Fahrzeuge mit
+              nachvollziehbarem Kilometerstand in den Verkauf. Ihre
+              Zufriedenheit liegt uns am Herzen – deshalb sind wir auch nach dem
+              Kauf für Sie da.
+            </p>
+
+            <a
+              href="https://home.mobile.de/AUTOMOBILEPICOBELLO"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-link"
+            >
+              Aktuelle Fahrzeuge ansehen →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="services section" id="services">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Unser Service</p>
+            <h2>Alles rund um Ihr Fahrzeug</h2>
+            <p>
+              Persönlicher Service und transparente Abwicklung vom ersten
+              Gespräch bis zur Fahrzeugübergabe.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="service-number">01</div>
+              <h3>Fahrzeugverkauf</h3>
+              <p>
+                Sorgfältig ausgewählte Gebrauchtwagen für unterschiedliche
+                Bedürfnisse und Budgets.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-number">02</div>
+              <h3>Fahrzeugankauf</h3>
+              <p>
+                Verkaufen Sie Ihr Fahrzeug unkompliziert mit transparenter
+                Bewertung und fairer Preisgestaltung.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-number">03</div>
+              <h3>Inzahlungnahme</h3>
+              <p>
+                Geben Sie Ihr bisheriges Fahrzeug in Zahlung und machen Sie den
+                Wechsel zum nächsten Auto besonders einfach.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-number">04</div>
+              <h3>Finanzierung</h3>
+              <p>
+                Flexible Finanzierungsmöglichkeiten passend zu Ihren
+                persönlichen Anforderungen.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vehicles CTA -->
+      <section class="vehicles-cta section">
+        <div class="container vehicles-cta-inner">
+          <div>
+            <p class="eyebrow">Aktuelle Fahrzeuge</p>
+            <h2>Entdecken Sie unsere aktuellen Angebote.</h2>
+            <p>
+              Unsere verfügbaren Fahrzeuge finden Sie jederzeit aktuell auf
+              mobile.de.
+            </p>
+          </div>
+
+          <a
+            href="https://home.mobile.de/AUTOMOBILEPICOBELLO"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+          >
+            Zum Fahrzeugbestand
+          </a>
+        </div>
+      </section>
+
+      <!-- Opening Hours + Contact -->
+      <section class="contact-section section" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-card" id="opening-hours">
+            <p class="eyebrow">Besuchen Sie uns</p>
+            <h2>Öffnungszeiten</h2>
+
+            <div class="opening-hours">
+              <table>
+                <caption class="sr-only">
+                  Öffnungszeiten von Automobile Picobello
+                </caption>
+
+                <tbody>
+                  <tr class="monday opening-day">
+                    <th scope="row">Montag</th>
+                    <td>09:00 – 18:00</td>
+                  </tr>
+
+                  <tr class="tuesday opening-day">
+                    <th scope="row">Dienstag</th>
+                    <td>09:00 – 18:00</td>
+                  </tr>
+
+                  <tr class="wednesday opening-day">
+                    <th scope="row">Mittwoch</th>
+                    <td>09:00 – 18:00</td>
+                  </tr>
+
+                  <tr class="thursday opening-day">
+                    <th scope="row">Donnerstag</th>
+                    <td>09:00 – 18:00</td>
+                  </tr>
+
+                  <tr class="friday opening-day">
+                    <th scope="row">Freitag</th>
+                    <td>09:00 – 18:00</td>
+                  </tr>
+
+                  <tr class="saturday opening-day">
+                    <th scope="row">Samstag</th>
+                    <td>09:00 – 14:00</td>
+                  </tr>
+
+                  <tr class="sunday opening-day">
+                    <th scope="row">Sonntag</th>
+                    <td>Geschlossen</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
 
-          <div class="service-box">
-            <div class="service-icon"></div>
-            <div class="service-title">Ankauf für faire Preise</div>
-            <div class="service-desc">
-              Verkaufen Sie Ihr Auto zu einem fairen Preis. Wir garantieren
-              eine schnelle und transparente Abwicklung.
+          <div class="contact-card">
+            <p class="eyebrow">Kontakt</p>
+            <h2>Wir sind für Sie da.</h2>
+
+            <div class="contact-list">
+              <div class="contact-item">
+                <span class="contact-label">Adresse</span>
+                <p>
+                  Wormser Landstraße 85C<br />
+                  67346 Speyer
+                </p>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-label">Telefon</span>
+                <a href="tel:+4917663196636"> +49 176 6319 6636 </a>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-label">E-Mail</span>
+                <a href="mailto:info@automobile-Picobello.de">
+                  info@automobile-Picobello.de
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="service-box">
-            <div class="service-icon"></div>
-            <div class="service-title">Inzahlungsnahme</div>
-            <div class="service-desc">
-              Nutzen Sie die Möglichkeit, Ihr altes Auto in Zahlung zu geben
-              und profitieren Sie von einem attraktiven Rabatt auf Ihr
-              nächstes Fahrzeug.
-            </div>
-          </div>
-          <div class="service-box">
-            <div class="service-icon"></div>
-            <div class="service-title">Finanzierung</div>
-            <div class="service-desc">
-              Wir bieten flexible Finanzierungsmodelle, die an Ihre
-              persönlichen Bedürfnisse angepasst sind, damit Sie Ihr Traumauto
-              problemlos fahren können.
+
+            <div class="contact-actions">
+              <a
+                href="https://wa.me/4917663196636"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary whatsapp-btn"
+                aria-label="Automobile Picobello über WhatsApp kontaktieren"
+              >
+                <svg
+                  class="whatsapp-icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.009-.371-.011-.57-.011-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479s1.065 2.875 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.693.625.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.981.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 0 1 7.021 2.91 9.83 9.83 0 0 1 2.897 7.022c-.003 5.45-4.437 9.885-9.922 9.885"
+                  />
+                </svg>
+
+                Schreib uns
+              </a>
+
+              <a
+                href="mailto:info@automobile-Picobello.de"
+                class="btn btn-outline"
+              >
+                E-Mail senden
+              </a>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
+    </main>
 
-  <section class="newsletter" id="contact">
-    <h2>
-      Besuchen Sie auch unsere Fahrzeuge Seite ! <br />
-      Für weitere Informationen und eine große Auswahl an Fahrzeugen.
-    </h2>
-    <div class="news-box">
-      <a href="https://home.mobile.de/AUTOMOBILEPICOBELLO" target="_blank" class="btn">Hier Klicken</a>
-    </div>
-  </section>
-  <!-- Footer -->
-  <section class="footer" id="footer">
-    <div class="footer-box">
-      <h2>Automobile<span>Picobello</span></h2>
-      <p>
-        Vielen Dank für Ihren Besuch! Bleiben Sie informiert über unsere
-        neuesten Fahrzeugangebote und lassen Sie uns Teil Ihrer
-        Mobilitätslösung sein.
-      </p>
-     
-      <div class="opening-hours">
-        <h2>Öffnungszeiten </h2>
-    
-        <table>
-            <tr class="monday fvl-d">
-                <td><span>Montag</span></td>
-                <td>9.00 - 18.00</td>
-            </tr>
-            <tr class="tuesday fvl-d">
-                <td><span>Dienstag</span></td>
-                <td>9.00 - 18.00</td>
-            </tr>
-            <tr class="wednesday fvl-d">
-                <td><span>Mittwoch</span></td>
-                <td>9.00 - 18.00</td>
-            </tr>
-            <tr class="thursday fvl-d">
-                <td><span>Donnerstag</span></td>
-                <td>9.00 - 18.00</td>
-            </tr>
-            <tr class="friday fvl-d">
-                <td><span>Freitag</span></td>
-                <td>9.00 - 18.00</td>
-            </tr>
-            <tr class="saturday fvl-d">
-                <td><span>Samstag</span></td>
-                <td>9.00 - 14.00</td>
-            </tr>
-            <tr class="sunday fvl-d">
-                <td><span>Sonntag</span></td>
-                <td>Geschlossen</td>
-            </tr>
-        </table>
-    </div>
-    </div>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="#home" class="footer-logo">
+            Automobile<span>Picobello</span>
+          </a>
 
-    <div class="footer-box contact-info">
-      <h3>Kontakt</h3>
-      <span>Wormser landstr 85C <br />
-        67346 Speyer</span>
-      <span>+49 176 6319 6636</span>
-      <span>info@automobile-Picobello.de</span><a href="mailto:info@automobile-Picobello.de">E-Mail Senden</a><br>
-      <a href="impresum.html">Impressum</a><br>
-      <div class="social">
-        <a href="#"><i class="bx bxl-facebook"></i></a>
-        <a href="#"><i class="bx bxl-twitter"></i></a>
-        <a href="#"><i class="bx bxl-instagram"></i></a>
+          <p class="footer-description">
+            Ihr zuverlässiger Ansprechpartner rund um Gebrauchtwagen,
+            Fahrzeugankauf, Inzahlungnahme und Finanzierung.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Navigation</h3>
+          <a href="#about">Über uns</a>
+          <a href="#services">Service</a>
+          <a href="#opening-hours">Öffnungszeiten</a>
+          <a href="#contact">Kontakt</a>
+        </div>
+
+        <div class="footer-links">
+          <h3>Rechtliches</h3>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </div>
       </div>
 
-      
-    </div>
-  </section>
-  <div class="copyright">
-    <p>&#169; Alshaheri All Right Reserved 2024.</p>
-  </div>
+      <div class="container footer-bottom">
+        <p>
+          © <span id="current-year"></span> Automobile Picobello. Alle Rechte
+          vorbehalten.
+        </p>
 
-  <!-- Link To JS -->
-  <script src="main.js"></script>
-</body>
+        <p class="developer-credit">Website by Mohammed Alshaheri</p>
+      </div>
+    </footer>
 
+    <script src="main.js"></script>
+  </body>
 </html>
